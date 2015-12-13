@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class iepa : MonoBehaviour {
+public class ButtonBehaviour : MonoBehaviour {
 
 	public LineRenderer catapultLineBack;
 
@@ -51,4 +51,13 @@ public class iepa : MonoBehaviour {
 		catapultLineBack.SetPosition(0, catapultLineBack.transform.position);	
 		catapultLineBack.SetPosition (1, this.transform.position);
 	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.transform.parent.name == "borders") {
+			clickedOn = false;
+			return;
+		}
+
+		NotificationCenter.DefaultCenter().PostNotification(this, "EndGame");
+	} 
 }

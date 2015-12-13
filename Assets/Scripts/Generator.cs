@@ -9,11 +9,12 @@ public class Generator : MonoBehaviour {
 
 	float timeElapsed = 0.0f;
 
-	public float interval = 1.0f; // Seconds
-
-	// Use this for initialization
-	void Start () {
+	public float intervalMin = 5.0f;
+	public float intervalMax = 10.0f; // Seconds
+	private float interval = 7.0f;
 	
+	void Start() {
+		interval = Random.Range (intervalMin, intervalMax);
 	}
 	
 	// Update is called once per frame
@@ -22,11 +23,11 @@ public class Generator : MonoBehaviour {
 
 		if (timeElapsed > interval) {
 			timeElapsed = .0f;
-			Debug.Log("suelta");
 
 			enemyPrefab.GetComponent<EnemyBehaviour>().type = typeMov;
 
-			Instantiate(enemyPrefab, this.transform.position, Quaternion.identity);
+			GameObject go = Instantiate(enemyPrefab, this.transform.position, Quaternion.identity) as GameObject;
+			go.gameObject.transform.parent = this.transform.parent;
 		}
 	
 	}

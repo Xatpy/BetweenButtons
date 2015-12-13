@@ -17,7 +17,8 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	private Vector3 vecDir;
 
-	// Use this for initialization
+	private float factor = 0.9f;
+
 	void Start () {
 		switch (type) {
 			case typeMovement.Down:
@@ -37,6 +38,6 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.position += (vecDir * Velocity);
+		this.transform.position += (vecDir * Velocity * factor);
 	}
 }

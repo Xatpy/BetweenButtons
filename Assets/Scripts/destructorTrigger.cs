@@ -3,13 +3,15 @@ using System.Collections;
 
 public class destructorTrigger : MonoBehaviour {
 
+	public int points = 10;
+
 	// Use this for initialization
 	void Start () {
-	
+		NotificationCenter.DefaultCenter().AddObserver(this, "IncrementarPuntos");
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log("Something has entered this zone.");    
+		NotificationCenter.DefaultCenter().PostNotification(this, "AddPoints", points);
 		Destroy (other.gameObject);
 	} 
 }
