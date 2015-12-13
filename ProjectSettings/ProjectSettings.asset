@@ -14,7 +14,7 @@ PlayerSettings:
   companyName: DefaultCompany
   productName: Unity
   cloudProjectId: 
-  defaultCursor: {fileID: 2800000, guid: 4c9b8a050e541496f9f9c2f5e32bf4ef, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 580
   defaultScreenHeight: 800
