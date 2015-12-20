@@ -9,13 +9,11 @@ public class Points : MonoBehaviour {
 
 	private int score = 0;
 
-	// Use this for initialization
 	void Start () {
 		NotificationCenter.DefaultCenter().AddObserver(this, "AddPoints");	
 		scoreText = GetComponent<Text> ();
 	}
 	
-	// Update is called once per frame
 	void AddPoints (Notification notificacion) {
 		int newPoints = (int)notificacion.data;
 		score += newPoints;

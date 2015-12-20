@@ -5,7 +5,6 @@ public class destructorTrigger : MonoBehaviour {
 
 	public int points = 10;
 
-	// Use this for initialization
 	void Start () {
 		NotificationCenter.DefaultCenter().AddObserver(this, "IncrementarPuntos");
 	}

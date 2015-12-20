@@ -10,15 +10,12 @@ public class ButtonBehaviour : MonoBehaviour {
 	private Ray rayToMouse;
 	
 	private bool clickedOn;
-	
 
-	// Use this for initialization
 	void Start () {
 		if (lineRenderActive)
 			LineRendererSetup();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if (clickedOn)
 			Dragging ();

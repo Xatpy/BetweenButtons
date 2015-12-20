@@ -151,6 +151,7 @@ GameObject:
   - 224: {fileID: 710396059}
   - 222: {fileID: 710396061}
   - 114: {fileID: 710396060}
+  - 114: {fileID: 710396062}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -173,7 +174,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &710396060
 MonoBehaviour:
@@ -190,12 +191,12 @@ MonoBehaviour:
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: a9b9a64bdcd3946c0a7dab7b871cffdf, type: 3}
-    m_FontSize: 22
+    m_FontSize: 44
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -209,6 +210,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 710396058}
+--- !u!114 &710396062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710396058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: .68235296, g: .250980407, b: .270588249, a: .501960814}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &934590123
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,10 +397,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 486, y: 605.690002}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -400,7 +415,7 @@ Canvas:
   m_GameObject: {fileID: 1058397477}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -492,6 +507,7 @@ GameObject:
   - 224: {fileID: 1769964827}
   - 222: {fileID: 1769964826}
   - 114: {fileID: 1769964825}
+  - 114: {fileID: 1769964828}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -514,7 +530,7 @@ MonoBehaviour:
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: a9b9a64bdcd3946c0a7dab7b871cffdf, type: 3}
-    m_FontSize: 32
+    m_FontSize: 77
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -545,11 +561,25 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1058397478}
   m_RootOrder: 0
-  m_AnchorMin: {x: .243547022, y: .824000061}
-  m_AnchorMax: {x: .243547022, y: .824000061}
-  m_AnchoredPosition: {x: 19, y: -25}
-  m_SizeDelta: {x: 447.299988, y: 166.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -99, y: 23}
+  m_SizeDelta: {x: -92.4749985, y: -23.4500008}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1769964828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769964824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: .721568644, g: .607843161, b: .498039246, a: .501960814}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1874213269
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,10 +612,10 @@ RectTransform:
   - {fileID: 710396059}
   m_Father: {fileID: 1058397478}
   m_RootOrder: 1
-  m_AnchorMin: {x: .662367582, y: .202666685}
-  m_AnchorMax: {x: .662367582, y: .202666685}
-  m_AnchoredPosition: {x: 1, y: -9}
-  m_SizeDelta: {x: 80, y: 45}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 139.825012, y: -296.550018}
+  m_SizeDelta: {x: -324.650024, y: -694.700012}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1874213271
 MonoBehaviour:
@@ -618,8 +648,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
-    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_HighlightedColor: {r: 1, g: .889655232, b: 0, a: 1}
+    m_PressedColor: {r: .956862807, g: .850980461, b: .615686297, a: 1}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
@@ -774,7 +804,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 9.94121647
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

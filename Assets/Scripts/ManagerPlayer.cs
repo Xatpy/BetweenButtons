@@ -28,14 +28,6 @@ public class ManagerPlayer : MonoBehaviour {
 					{
 						Debug.Log ("Touched it");
 					}
-//
-//					if (Button1.HitTest(t.position, Camera.main)) {
-//						Debug.Log("Touching Left Control");
-//					}
-//					
-//					if (guiRight.HitTest(t.position, Camera.main)) {
-//						Debug.Log("Touching Right Control");
-//					}
 				}
 				
 				if (t.phase == TouchPhase.Ended) {

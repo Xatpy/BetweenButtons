@@ -11,15 +11,15 @@ PlayerSettings:
   targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Unity
+  companyName: Xatpy
+  productName: BetweenButtons
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 580
   defaultScreenHeight: 800
-  defaultScreenWidthWeb: 400
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 550
+  defaultScreenHeightWeb: 800
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
@@ -253,7 +253,7 @@ PlayerSettings:
   spritePackerPolicy: 
   scriptingDefineSymbols:
     1: Score
-    2: CROSS_PLATFORM_INPUT
+    2: 
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     14: MOBILE_INPUT

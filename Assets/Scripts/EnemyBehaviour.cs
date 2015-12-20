@@ -17,7 +17,7 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	private Vector3 vecDir;
 
-	private float factor = 0.9f;
+	private float factor = 0.1f;
 
 	void Start () {
 		switch (type) {
@@ -36,7 +36,6 @@ public class EnemyBehaviour : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		this.transform.position += (vecDir * Velocity * factor);
 	}

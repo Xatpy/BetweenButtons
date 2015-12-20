@@ -17,7 +17,6 @@ public class Generator : MonoBehaviour {
 		interval = Random.Range (intervalMin, intervalMax);
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		timeElapsed += Time.deltaTime;
 
@@ -29,6 +28,5 @@ public class Generator : MonoBehaviour {
 			GameObject go = Instantiate(enemyPrefab, this.transform.position, Quaternion.identity) as GameObject;
 			go.gameObject.transform.parent = this.transform.parent;
 		}
-	
 	}
 }
