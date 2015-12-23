@@ -196,7 +196,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -612,11 +612,11 @@ RectTransform:
   - {fileID: 710396059}
   m_Father: {fileID: 1058397478}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 139.825012, y: -296.550018}
-  m_SizeDelta: {x: -324.650024, y: -694.700012}
-  m_Pivot: {x: .5, y: .5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -67, y: 82}
+  m_SizeDelta: {x: 148.309998, y: 84.9000015}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1874213271
 MonoBehaviour:
   m_ObjectHideFlags: 0

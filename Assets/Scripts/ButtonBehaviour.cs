@@ -11,12 +11,41 @@ public class ButtonBehaviour : MonoBehaviour {
 	
 	private bool clickedOn;
 
+	public Camera camera;
+
+	public GameObject test;
+	public bool testing;
+
 	void Start () {
 		if (lineRenderActive)
 			LineRendererSetup();
 	}
+
+	void Multitouch () {
+		if (!testing)
+			return;
+
+		if (Input.touchCount > 0) {
+			Touch myTouch = Input.GetTouch (0);
+			Touch[] myTouches = Input.touches;
+			for (int i = 0; i < Input.touchCount; i++) {
+				//Do something with the touches
+				Ray ray = camera.ScreenPointToRay (new Vector3 (myTouches [i].position.x, myTouches [i].position.y, 0));
+				RaycastHit hit;
+				if (Physics.Raycast (ray, out hit, Mathf.Infinity, LayerMask.NameToLayer ("Player"))) {
+					Debug.Log ("hit");
+					test.SetActive(true);
+					//enter here if the object has been hit. The first hit object belongin to the layer "layerOfYourGameObject" is returned.
+				}
+			}
+		} else {
+			test.SetActive(false);
+		}
+	}
 	
 	void Update () {
+		Multitouch ();
+
 		if (clickedOn)
 			Dragging ();
 
@@ -54,7 +83,6 @@ public class ButtonBehaviour : MonoBehaviour {
 			clickedOn = false;
 			return;
 		}
-
 		NotificationCenter.DefaultCenter().PostNotification(this, "EndGame");
 	} 
 }
