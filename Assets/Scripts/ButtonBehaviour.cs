@@ -44,7 +44,7 @@ public class ButtonBehaviour : MonoBehaviour {
 	}
 	
 	void Update () {
-		Multitouch ();
+		//Multitouch ();
 
 		if (clickedOn)
 			Dragging ();

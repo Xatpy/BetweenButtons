@@ -17,7 +17,7 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	private Vector3 vecDir;
 
-	private float factor = 0.1f;
+	private float factor = 1.0f;
 
 	void Start () {
 		switch (type) {
@@ -36,7 +36,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		}
 	}
 	
-	void Update () {
+	void FixedUpdate () {
 		this.transform.position += (vecDir * Velocity * factor);
 	}
 }

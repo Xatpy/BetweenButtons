@@ -808,6 +808,14 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 42
+--- !u!1 &768706436
+GameObject:
+  m_PrefabParentObject: {fileID: 178640, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+  m_PrefabInternal: {fileID: 1698376252}
+--- !u!4 &768706437
+Transform:
+  m_PrefabParentObject: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+  m_PrefabInternal: {fileID: 1698376252}
 --- !u!1 &797199162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1078,7 @@ GameObject:
   - 231: {fileID: 861070752}
   - 114: {fileID: 861070751}
   - 58: {fileID: 861070754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,6 +1136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catapultLineBack: {fileID: 1859156124}
   lineRenderActive: 1
+  camera: {fileID: 962983625}
+  test: {fileID: 0}
+  testing: 0
 --- !u!231 &861070752
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1675,6 +1686,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1465305208}
+  - 114: {fileID: 1465305209}
   m_Layer: 0
   m_Name: _generators
   m_TagString: Untagged
@@ -1698,6 +1710,21 @@ Transform:
   - {fileID: 1746519485}
   m_Father: {fileID: 888680889}
   m_RootOrder: 2
+--- !u!114 &1465305209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465305207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5531f1680613447989755be966cc8555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generatorToDown: {fileID: 836757908}
+  generatorToUp: {fileID: 1746519484}
+  generatorToRight: {fileID: 847503041}
+  generatorToLeft: {fileID: 992652312}
 --- !u!1 &1663919867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,8 +1752,55 @@ Transform:
   m_Children:
   - {fileID: 1859156126}
   - {fileID: 861070750}
+  - {fileID: 768706437}
   m_Father: {fileID: 888680889}
   m_RootOrder: 1
+--- !u!1001 &1698376252
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1663919868}
+    m_Modifications:
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.60000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.19999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 483980, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 178640, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 591b383e1d6aa46759eda724eea06a94, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1709992236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2115,7 @@ GameObject:
   - 50: {fileID: 1859156128}
   - 114: {fileID: 1859156127}
   - 58: {fileID: 1859156129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2136,6 +2210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catapultLineBack: {fileID: 0}
   lineRenderActive: 0
+  camera: {fileID: 962983625}
+  test: {fileID: 768706436}
+  testing: 1
 --- !u!50 &1859156128
 Rigidbody2D:
   m_ObjectHideFlags: 0
